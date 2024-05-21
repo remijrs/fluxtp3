@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: fluxtp3
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  url: "https://github.com/remijrs/fluxtp3" 
+  ref:
+    branch: main
